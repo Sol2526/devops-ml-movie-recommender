@@ -1,0 +1,8 @@
+fastapi[standard]
+requests
+python-dotenv
+sqlmodel
+uvicorn
+pytest
+httpx
+ruff

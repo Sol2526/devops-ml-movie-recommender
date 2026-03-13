@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+    container_name: devops-ml-movie-recommender-api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # We mount the SQLite file so feedback survives container recreation.
+      - ./movie_recommender.db:/app/movie_recommender.db
